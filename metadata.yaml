@@ -1,0 +1,58 @@
+from: markdown
+# reader: may be used instead of from:
+to: pdf
+# writer: may be used instead of to:
+
+# leave blank for output to stdout:
+# output-file:
+# leave blank for input from stdin, use [] for no input:
+# input-files:
+# - preface.md
+# - content.md
+# or you may use input-file: with a single value
+
+# Include options from the specified defaults files.
+# The files will be searched for first in the working directory
+# and then in the defaults subdirectory of the user data directory.
+# The files are included in the same order in which they appear in
+# the list. Options specified in this defaults file always have
+# priority over the included ones.
+# defaults:
+
+# template: letter
+standalone: true
+self-contained: false
+
+# note that structured variables may be specified:
+variables:
+  documentclass: report
+
+# metadata values specified here are parsed as literal
+# string text, not markdown:
+metadata:
+  lang: es-CL
+  pagestyle: headings
+  author: Student's name
+  supervisor: Supervisor's name
+  co-supervisor1: First co-supervisor's name
+  co-supervisor2: Second co-supervisor's name
+  date: \today
+  linkcolor: blue
+  indent: true
+  whitespace: big
+  lof: true
+  lot: true
+  title:
+    - Title of the thesis
+  abstract:
+    - Abstract...
+  acknowledgements:
+    - Acknowledgements...
+  dedicatory:
+    - Dedicatory...
+
+indented-code-classes: [numberLines ]
+table-of-contents: true
+toc-depth: 2
+highlight-style: espresso
+number-sections: true

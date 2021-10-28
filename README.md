@@ -10,6 +10,7 @@ to use *Pandoc*.
 - `texlive-core`
 - `texlive-extra`
 - `pandoc-fignos`
+- `pandoc-tablenos`
 - `haskell-citeproc`
 
 
